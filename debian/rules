@@ -8,12 +8,10 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+export PREFIX=/usr
 
-build:
+override_dh_auto_build:
 	$(MAKE) TARGET=linux26
-
-install:
-	$(MAKE) install-bin PREFIX=/usr DESTDIR=$(DESTDIR)
 
 %:
 	dh  $@
