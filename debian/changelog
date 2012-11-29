@@ -1,5 +1,5 @@
 appscale-haproxy (1.4.4-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Packaging HA Proxy 1.4.4
 
  -- Roberto Aguilar <roberto@appscale.com>  Thu, 29 Nov 2012 01:32:31 +0100
