@@ -8,7 +8,9 @@ Homepage: http://haproxy.1wt.eu/
 
 Package: appscale-haproxy
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc6 (>= 2.4), libpcre3 (>= 7.7), adduser
+Conflicts: haproxy
+Replaces: haproxy
 Description: fast and reliable load balancing reverse proxy
  HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
  availability environments. It features connection persistence through HTTP
